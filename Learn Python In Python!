@@ -1,0 +1,107 @@
+import time
+
+Mistake1 = False
+Mistake2 = False
+print("Welcome to coding tutorial! For python of course.")
+time.sleep(3)
+print("You will be learning python... in python!")
+time.sleep(3)
+print("To download, go to https://www.python.org/downloads/ and download the latest version, 3.10.")
+input("Press return or enter when you are ready! Also make sure you have the ORIGINAL python text editor and run that!")
+print("Ok, let's start with the basics.")
+time.sleep(2)
+print("The print function! This is where you can print anything!")
+time.sleep(2)
+print("Basically, print is just making the output say something.")
+time.sleep(2)
+print("Now I want YOU to type in, print('Hello world!')")
+input("Press enter when you have done that.")
+print("Cool! It should've said Hello world!")
+time.sleep(2)
+print("If it didn't, make sure you have the brackets or quotation marks. Also check if you downloaded 3.10.")
+time.sleep(5)
+Mistake1Input = input("If you made a mistake, say yes. If not, just press enter or return. Please be honest!")
+if Mistake1Input == "yes":
+    print("Thanks for being honest! This will help us and you may learn this mistake later on at the end.")
+    Mistake1 = True
+else:
+    print("Alright then, hope you weren't lying.")
+time.sleep(3)
+print("Now you may be asking, how did I do the press enter thing there?")
+time.sleep(3)
+print("Well, I used... the input function! This is a function that lets you talk with the code.")
+time.sleep(3)
+print("Here is an example. Hi! Now you need to say hi.")
+hi = input("")
+if hi == "hi":
+    print("Great! I used the if function but in update 1.0, you can't learn that here.")
+else:
+    print("Ah never mind. I used the if function but in update 1.0, you can't learn that here.")
+time.sleep(3)
+print("Now I want YOU to type in, input("")")
+input("Press enter once you have done that.")
+print("Great! It should've said nothing and you should've been able to type something without an error.")
+time.sleep(3)
+Mistake2Input = input("If you made a mistake, please say yes, otherwise, just press enter or return.")
+if Mistake2Input == "yes":
+    print("Thanks for being honest! This will help us and you may learn this mistake later on at the end.")
+    Mistake2 = True
+else:
+    print("Alright then, hope you weren't lying.")
+time.sleep(3)
+if Mistake1 or Mistake2:
+    print("Your mistakes:")
+    if Mistake1:
+        print("Print Function, Type 1 to learn.")
+    if Mistake2:
+        print("Input Function, Type 2 to learn.")
+    learn = input("")
+    if Mistake1:
+        if learn == "1":
+            while not Mistake1:
+                print("The print function! This is where you can print anything!")
+                time.sleep(2)
+                print("Basically, print is just making the output say something.")
+                time.sleep(2)
+                print("Now I want YOU to type in, print('Hello world!')")
+                input("Press enter when you have done that.")
+                print("Cool! It should've said Hello world!")
+                time.sleep(2)
+                print("If it didn't, check if you have the brackets or quotation marks. Check if you downloaded 3.10.")
+                if Mistake1Input == "yes":
+                    print("Fix your mistakes please. Let's start from the beginning again!")
+                    continue
+                else:
+                    print("Alright then, hope you weren't lying.")
+                    Mistake1 = False
+    else:
+        print("That... isn't there.")
+    if Mistake2:
+        if learn == "2":
+            while not Mistake2:
+                print("Now you may be asking, how did I do the press enter thing there?")
+                time.sleep(3)
+                print("Well, I used... the input function! This is a function that lets you talk with the code.")
+                time.sleep(3)
+                print("Here is an example. Hi! Now you need to say hi.")
+                hi = input("")
+                if hi == "hi":
+                    print("Great! I used the if function but in update 1.0, you can't learn that here.")
+                else:
+                    print("Ah never mind. I used the if function but in update 1.0, you can't learn that here.")
+                time.sleep(3)
+                print("Now I want YOU to type in, input("")")
+                input("Press enter once you have done that.")
+                print("Good! It should've said nothing and you should've been able to type something without an error.")
+                time.sleep(3)
+                Mistake2Input = input("If you made a mistake, please say yes, otherwise, just press enter or return.")
+                if Mistake2Input == "yes":
+                    print("Let's start from the start!")
+                    continue
+                else:
+                    print("Alright then, hope you weren't lying.")
+                    Mistake2 = True
+    else:
+        print("That... isn't there.")
+print("This is the end of the version 0.0.1 PyTutorial! I'll do more updates.")
+print("Credits:\nCoder: Bread YT")
